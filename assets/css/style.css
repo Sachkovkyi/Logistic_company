@@ -65,6 +65,10 @@ img {
     display: none;
 }
 
+.burger:focus {
+    outline: none;
+}
+
 /* Nav */
 .nav {
     display: flex;
@@ -80,7 +84,7 @@ img {
     font-size: 15px;
     color: #fff;
     text-decoration: none;
-
+    cursor: pointer;
 }
 
 .nav__link.active {
@@ -913,6 +917,11 @@ img {
 
 }
 
+.show {
+    display: flex;
+
+}
+
 .modal__inner {
     margin-top: 50px;
     max-width: 400px;
@@ -1047,8 +1056,13 @@ img {
     right: -40px;
     background: none;
     border: none;
-    cursor: pointer;
+    cursor: pointerb;
 
+}
+
+.modal__close:focus {
+    outline: none;
+    cursor: pointer;
 }
 
 /* Blog */
@@ -1270,8 +1284,8 @@ img {
         height: auto;
         padding: 10px 15px;
         
-    }
 
+    }
     .burger {
         padding: 0;
         display: block;
@@ -1279,7 +1293,8 @@ img {
         border: none;
 
     }
-
+    
+     
 
     /* Intro */
     .intro {

@@ -17,17 +17,17 @@
         <div class="container">
             <div class="header__iner">
                 <img class="img" src="/assets/img/logo.svg" alt="logo">
-                <nav class="nav">
-                    <a href="#" class="nav__link  active" data-scroll="#services">Services</a>
-                    <a href="#" class="nav__link" data-scroll="#clients">Clients</a>
-                    <a href="#" class="nav__link" data-scroll="#benefits">Benefits</a>
-                    <a href="#" class="nav__link" data-scroll="#team">Team</a>
-                    <a href="#" class="nav__link" data-scroll="#mission">Mission</a>
-                    <a href="#" class="nav__link" data-scroll="#news">News</a>
-                    <a href="#" class="nav__link" >Contact Us</a>
+                <nav class="nav" id="nav">
+                    <a hre="#home" class="nav__link" data-scroll="#services">Services</a>
+                    <a hre="#clients" class="nav__link" data-scroll="#clients">Clients</a>
+                    <a hre="#benefits" class="nav__link" data-scroll="#benefits">Benefits</a>
+                    <a hre="#team" class="nav__link" data-scroll="#team">Team</a>
+                    <a hre="#mission" class="nav__link" data-scroll="#mission">Mission</a>
+                    <a hre="#news" class="nav__link" data-scroll="#news">News</a>
+                    <a hre="#home" class="nav__link" data-scroll="#home">Contact Us</a>
                 </nav>
             
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="navToogle">
                     <img class="burger__icon" src="/assets/img/burger.svg" alt="">
                 </button>
                 
@@ -37,7 +37,7 @@
     </header>
 
     <!-- Intro -->
-    <div class="intro" id="intro">
+    <div id="home" class="intro" id="intro">
         <div class="container">
             <div class="intro__iner">
                 <div class="request-form request-form--intro">
@@ -61,7 +61,7 @@
                                 <input class="input input--email" type="email" placeholder="Your e-mail">
                             </div>
 
-                            <button type="submit" class="btn btn--orange btn__intro">Call me back</button>
+                            <button type="submit" class="btn btn--orange btn__intro" data-modal="#becomeClientModal">Call me back</button>
                         </form>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
     </div>
 
     <!-- Services -->
-    <section class="section" id="services">
+    <section id="clients" class="section" id="services" data-scrollspy="Services">
         <div class="container">
             <div class="services">
                 <h2 class="services__main-title">Services</h2>
@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <section class="section section--map" id="clients">
+    <section class="section section--map" id="clients" >
         <div class="container">
             <div class="section__title">
                 <h2><span>Our</span>clients</h2>
@@ -192,13 +192,13 @@
             </div>
             
             <div class="clients__footer">
-                <button class="btn btn--orange btn__clients">Become a client</button>
+                <button class="btn btn--orange" data-modal="#becomeClientModal">Become a client</button>
                 <div>we love our clients</div>
             </div>
         </div>
     </section>
 <!-- benefits -->
-    <section class="section" id="benefits">
+    <section id="benefits" class="section" id="benefits" data-scrollspy="benefits">
         <div class="container">
             <div class="benefits">
                 <div class="benefits__left">
@@ -234,7 +234,7 @@
     </section>
 
     <!-- comands -->
-    <section class="section section--gray" id="team">
+    <section id="team" class="section section--gray" id="team" data-scrollspy="comands">
         <div class="container">
             <div class="comands">
                 <div class="section__title">
@@ -272,7 +272,7 @@
         </div>
     </section>
 <!-- mission -->
-    <section class="section" id="mission">
+    <section id="mission" class="section" id="mission" data-scrollspy="mission">
         <div class="container">
             <div class="mission">
                     <h1 class="mission__title">Our mission</h1>
@@ -292,7 +292,7 @@
     </section>
 
     <!-- News    -->
-    <section class="section section__news" id="news">
+    <section id="news" class="section section__news" id="news" data-scrollspy="News">
         <div class="container">
             <div class="section__title">
             <h2><span>Interesting</span>  to read</h2>
@@ -384,7 +384,7 @@
                     </address>
                 </div>
             
-                <button class="modal__close">
+                <button class="modal__close" data-modal-close="">
                     <img src="/assets/img/close 1.svg" alt="">
                 </button>
     
